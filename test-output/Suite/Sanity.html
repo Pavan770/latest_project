@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>TestNG:  Sanity</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 16 16:21:26 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>138 seconds (138145 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.app.testcases.Ftpinbound.beforeTCExecution()'><b>beforeTCExecution</b><br>Test class: com.app.testcases.Ftpinbound<br>Parameters: [TestResult name=FTPboundTest status=FAILURE method=Ftpinbound.FTPboundTest()[pri:0, instance:com.app.testcases.Ftpinbound@7fa833] output={null}]</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AIPLLTH372&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\PPGOVI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9c5d5d63eb9321a291e640e9ef88175
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.pom.Resources.Screenshot.Takescreenshotone(Screenshot.java:30)
+	at com.app.base.BaseClass.beforeTCExecution(BaseClass.java:116)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20176662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20176662'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AIPLLTH372&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\PPGOVI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9c5d5d63eb9321a291e640e9ef88175
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.pom.Resources.Screenshot.Takescreenshotone(Screenshot.java:30)
+	at com.app.base.BaseClass.beforeTCExecution(BaseClass.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:736)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.app.testcases.Ftpinbound@7fa833</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.app.testcases.Ftpinbound.FTPboundTest()'><b>FTPboundTest</b><br>Test class: com.app.testcases.Ftpinbound</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at com.app.actiondriver.Action.explicitWait(Action.java:777)
+	at com.pageObjects.AppIntegrationpage.AppIntegrationcreation(AppIntegrationpage.java:144)
+	at com.app.testcases.Ftpinbound.FTPboundTest(Ftpinbound.java:21)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9188512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9188512'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at com.app.actiondriver.Action.explicitWait(Action.java:777)
+	at com.pageObjects.AppIntegrationpage.AppIntegrationcreation(AppIntegrationpage.java:144)
+	at com.app.testcases.Ftpinbound.FTPboundTest(Ftpinbound.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>44</td>
+<td>com.app.testcases.Ftpinbound@7fa833</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.app.testcases.GlobalIntegraTest.globalIntegraTest()'><b>globalIntegraTest</b><br>Test class: com.app.testcases.GlobalIntegraTest<br>Parameters: {UserName=sftptester, Encryptedkey=-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxPiQxNlso4ltz9uy4O3nurBcGVfsPIjjm0UTF6Z35QBIbK5i
++gJPE6PwQx8dA0XiPupSWTLw07Mjj2jQ8xgDCFNLWMyAU092NK1vBHj/jGYmnm1t
+YTimxfmGmyB6bkwQI+Dou/Q2GL+uMEFQ7pzflVoKJsDfc3MAT4yf0fY/5IERRus3
+wSgVDBkdAxfc8PNuPr61kaC5/I9a3yMrEUvXWQFJStr9gaP/JsE3df6kTM1rydpV
+YjTbbXY72Q//xrugjFxmq9tHeQkescfdjLRH8H4GCasd/gkxs109G//nJy9GVIZ1
+G4oVqoq1FbNhRy3OvJW1NUejWe6Gpk4/yFtxSwIDAQABAoIBAQCM3tTy5ClNgKFX
+0mHJenyLyUvlGDutQ52805cHCBihYCVsDQBem74gZtQTvTHLwHRB2OYSQ1t3nJvn
+Geiuo1Kv5ppxpLh2XNNGc299vGfP6tLd5ZcfvBuSZZY+ZekJ7z5v2o+4tLzn0Fbs
+zhnqvakuMJooAzMMZ4gmXIWE7V/etKoBQ20jhPEBUZJExnyxKV0vVno48RWXuGhj
+0jPEdj3pnYG2HphfS8EvYzsSggKmHIOkiPt2kNgjhTlSOPcm0bEkgS9YbCW1l7d0
+K+d2qJb0Vw6h/QVs+/ZMB4tHKu3sAL16HvKqYVbVZHE2akElS0nFheEPPGb7N/jJ
+VLpsAyq5AoGBAPNTffMr/VQjMZ/BAOBw4yn7PdecF4RxFlxnQo4ylkX+ovEps9St
+tyVHWJOSHtkOqt33LDae/jj3tFG/eXbp3iX4zBv8lvuXY2dWZwPZu/uL17Ctzzog
+rzwBJrb3wiZ7Gm2+eu7RiCOwSVEz+WHNHr3d+NkZPjH/WhhVF3tF5453AoGBAM86
++Vr7WI2no1g8dykdOJbXnklj8zV2xby2YQWc2zVdvHXPm0vnc0/+hx63bPVvOCKJ
+XO43D9znm1EYm9o03dQdt9M3IyR/cR0HaYD9rnv7ccqDoNGHhGFIYAbKVVpCJAhd
+36EWnhScv3ePtw/ZKEb22qbDdHRjH1BDx9LMj4TNAoGBALUwScxmyEf7wPsFvAJk
+7TMYq88+o2By2UTLe4rpbm8Gkwzjkc5f4M34l6OjnibhPij04k52DDYddX+eBfOf
+aFV8M3jvmPoVm+aaNzFt1AYW9vDQLExLhFE5RjveuArxhheMTHxDOI3iumWmPyAt
+nqOhg6kdm+udCtitnEOmJSw3AoGABnXFLjPlp8zRB8AiytJRYEpqcck+3KzOLzrU
+PXONVdWNOXL2WWBmtNivZ6K6L9B+xHzZu8dVpEJIEjgdK6k4PROMFnaCjvG2GfyQ
+Kmg+FzlYa8K8saty0gGKlMub64tiSix6+y+UT/ou8dA2GbVgTw4E9Ovk5nfskvj5
+8rVTyAUCgYBgJyuVKXtXRd29nvG0TFhaJrGhOJQHCtp/LPLj89ZAe/wQfYV5wrbO
+20SnR4QCvVu6Qmm3g3zyqiktym/MYyIWrGZnCm1+XrZBe0g0oqEyBQrnPoRfJc2D
+U6oWR5szVyGS7srJLLdNWj/sH/Atp5XxIjfcGBYfElg+OfVet/v3rA==
+-----END RSA PRIVATE KEY-----
+, Port=22, FolderPath=/local/suri, ServerAddress=10.0.0.139, Name=Sftp_Auto15}</td>
+<td></td>
+<td>55</td>
+<td>com.app.testcases.GlobalIntegraTest@17e2f02</td></tr>
+<tr>
+<td title='com.app.testcases.WriteExcelDatautils.inRandoutward()'><b>inRandoutward</b><br>Test class: com.app.testcases.WriteExcelDatautils</td>
+<td></td>
+<td>0</td>
+<td>com.app.testcases.WriteExcelDatautils@c0edeb</td></tr>
+<tr>
+<td title='com.app.testcases.WriteExcelDatautils.inRandpanindia()'><b>inRandpanindia</b><br>Test class: com.app.testcases.WriteExcelDatautils</td>
+<td></td>
+<td>0</td>
+<td>com.app.testcases.WriteExcelDatautils@c0edeb</td></tr>
+<tr>
+<td title='com.app.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.app.testcases.LoginPageTest<br>Parameters: proqa1, Test@123, test, test</td>
+<td></td>
+<td>7</td>
+<td>com.app.testcases.LoginPageTest@1933fd1</td></tr>
+</table><p>
+</body>
+</html>

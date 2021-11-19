@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Sanity(failed)">
+    <classes>
+      <class name="com.app.testcases.LoginPageTest">
+        <methods>
+          <include name="beforeTCExecution"/>
+          <include name="beforeTCEXECUtion"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.app.testcases.LoginPageTest -->
+      <class name="com.app.testcases.Ftpinbound">
+        <methods>
+          <include name="beforeTCExecution"/>
+          <include name="beforeTCEXECUtion"/>
+          <include name="FTPboundTest"/>
+        </methods>
+      </class> <!-- com.app.testcases.Ftpinbound -->
+      <class name="com.app.testcases.GlobalIntegraTest">
+        <methods>
+          <include name="beforeTCExecution"/>
+          <include name="beforeTCEXECUtion"/>
+        </methods>
+      </class> <!-- com.app.testcases.GlobalIntegraTest -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [Suite] -->
